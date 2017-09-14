@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B91DDB61F6A305F00579580 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B91DDB51F6A305F00579580 /* main.m */; };
 		3B91DDB91F6A305F00579580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B91DDB81F6A305F00579580 /* AppDelegate.m */; };
-		3B91DDBC1F6A305F00579580 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B91DDBB1F6A305F00579580 /* ViewController.m */; };
+		3B91DDBC1F6A305F00579580 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B91DDBB1F6A305F00579580 /* Home.m */; };
 		3B91DDBF1F6A305F00579580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B91DDBD1F6A305F00579580 /* Main.storyboard */; };
 		3B91DDC21F6A305F00579580 /* CircleAndSliders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B91DDC01F6A305F00579580 /* CircleAndSliders.xcdatamodeld */; };
 		3B91DDC41F6A305F00579580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B91DDC31F6A305F00579580 /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		3B91DDB51F6A305F00579580 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B91DDB71F6A305F00579580 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B91DDB81F6A305F00579580 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B91DDBA1F6A305F00579580 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3B91DDBB1F6A305F00579580 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B91DDBA1F6A305F00579580 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		3B91DDBB1F6A305F00579580 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		3B91DDBE1F6A305F00579580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B91DDC11F6A305F00579580 /* CircleAndSliders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CircleAndSliders.xcdatamodel; sourceTree = "<group>"; };
 		3B91DDC31F6A305F00579580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		3B91DDB31F6A305F00579580 /* CircleAndSliders */ = {
 			isa = PBXGroup;
 			children = (
-				3B91DDB71F6A305F00579580 /* AppDelegate.h */,
-				3B91DDB81F6A305F00579580 /* AppDelegate.m */,
-				3B91DDBA1F6A305F00579580 /* ViewController.h */,
-				3B91DDBB1F6A305F00579580 /* ViewController.m */,
+				3B91DDCF1F6A30CA00579580 /* Main */,
+				3B91DDCE1F6A306500579580 /* Controllers */,
 				3B91DDBD1F6A305F00579580 /* Main.storyboard */,
 				3B91DDC31F6A305F00579580 /* Assets.xcassets */,
 				3B91DDC51F6A305F00579580 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				3B91DDB51F6A305F00579580 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B91DDCE1F6A306500579580 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B91DDBA1F6A305F00579580 /* Home.h */,
+				3B91DDBB1F6A305F00579580 /* Home.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3B91DDCF1F6A30CA00579580 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3B91DDB71F6A305F00579580 /* AppDelegate.h */,
+				3B91DDB81F6A305F00579580 /* AppDelegate.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B91DDC21F6A305F00579580 /* CircleAndSliders.xcdatamodeld in Sources */,
-				3B91DDBC1F6A305F00579580 /* ViewController.m in Sources */,
+				3B91DDBC1F6A305F00579580 /* Home.m in Sources */,
 				3B91DDB91F6A305F00579580 /* AppDelegate.m in Sources */,
 				3B91DDB61F6A305F00579580 /* main.m in Sources */,
 			);
