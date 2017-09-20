@@ -27,10 +27,35 @@ int blue = 0;
     [self.circleLayer setPath:[[UIBezierPath bezierPathWithOvalInRect:CGRectMake(156.5, 50, 100, 100)] CGPath]];
     [[self.view layer] addSublayer:self.circleLayer];
     
+    self.alertView = [UIAlertController alertControllerWithTitle:@"Alert!" message:@"Alert!" preferredStyle:UIAlertControllerStyleAlert];
+    self.alertViewOk =[UIAlertAction actionWithTitle: @"Ok" style:UIAlertActionStyleDefault handler:nil];
+    [self.alertView addAction:self.alertViewOk];
+    
+}
+- (IBAction)alertButtom:(id)sender {
+    self.alertView.message = [NSString stringWithFormat: @"Name: %@\n", self.nameField.text];
+    self.alertView.message = [NSString stringWithFormat: @"%@Phone: %@\n", self.alertView.message, self.phoneField.text];
+    if(self.hideCircle.isOn)
+    {
+        self.alertView.message = [NSString stringWithFormat: @"%@There's no circle", self.alertView.message];
+    }
+    else
+    {
+        self.alertView.message = [NSString stringWithFormat: @"%@Color: %@%@%@", self.alertView.message,
+                                  [NSString stringWithFormat:@"%02X", (int)self.redSlider.value],
+                                  [NSString stringWithFormat:@"%02X", (int)self.greenSlider.value],
+                                  [NSString stringWithFormat:@"%02X", (int)self.blueSlider.value]];
+    }
+    [self presentViewController:self.alertView animated:YES completion:nil];
 }
 
-- (IBAction)alertButtm:(id)sender {
-    
+- (IBAction)nameFieldPrimaryAction:(id)sender {
+    [self.view endEditing:YES];
+}
+
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 // Switch, hide and unhide circle.

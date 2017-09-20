@@ -21,5 +21,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *nameField;
 @property (strong, nonatomic) IBOutlet UITextField *phoneField;
 
+@property (strong, nonatomic) UIAlertController *alertView;
+@property (strong, nonatomic) UIAlertAction *alertViewOk;
+
 @end
 
